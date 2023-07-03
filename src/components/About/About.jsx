@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import laptopImg from "../../Assets/about.png";
 import Particle from "../Particle";
 import AboutCard from "./AboutCard";
@@ -10,6 +11,13 @@ import Toolstack from "./Toolstack";
 function About() {
   return (
     <Container fluid className="about-section">
+    <HelmetProvider>
+      <Helmet>
+        <title>About - Shamimul Haque</title>
+      </Helmet>
+    </HelmetProvider>
+
+    
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>

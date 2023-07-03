@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import resume from "/assets/Resume_of_Md_Shamimul_Haque.pdf"
 import Particle from "../Particle";
+import resume from "/assets/Resume_of_Md_Shamimul_Haque.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -17,6 +18,13 @@ function ResumeNew() {
 
   return (
     <div>
+    <HelmetProvider>
+      <Helmet>
+        <title>Resume - Shamimul Haque</title>
+      </Helmet>
+    </HelmetProvider>
+
+    
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>

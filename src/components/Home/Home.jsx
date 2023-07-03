@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import ProjectBox from "../Projects/ProjectBox";
@@ -10,6 +11,12 @@ import Type from "./Type";
 function Home() {
   return (
     <section>
+      <HelmetProvider>
+        <Helmet>
+          <title>Shamimul Haque</title>
+        </Helmet>
+      </HelmetProvider>
+
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">

@@ -1,11 +1,19 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Particle from "../Particle";
 import ProjectBox from "./ProjectBox";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
+    <HelmetProvider>
+      <Helmet>
+        <title>Projects - Shamimul Haque</title>
+      </Helmet>
+    </HelmetProvider>
+
+    
       <Particle />
       <Container>
         <h1 className="project-heading">
