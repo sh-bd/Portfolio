@@ -31,8 +31,8 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-          {/* <h1 style={{ fontSize: "18px" }} className="heading-name main-name ">SH</h1> */}
+          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+          <h1 className="heading-name main-name img-fluid logo">Shamimul Haque</h1>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

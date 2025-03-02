@@ -11,11 +11,28 @@ function ProjectCards(props) {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          {props.description.split("\n").map((line, index) =>
+            line.startsWith("Technologies:") ? (
+              <p key={index} style={{ marginBottom: "5px" }}>
+                <strong>{line}</strong>
+              </p>
+            ) : (
+              <p key={index} style={{ marginBottom: "5px" }}>{line}</p>
+            )
+          )}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
+
+        <Button variant="primary" href={props.ghLink1} target="_blank">
           <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          {props.isBlog ? "Blog" : "Client"}
+        </Button>
+        {"\n"}
+        {"\n"}
+
+
+        <Button variant="primary" href={props.ghLink2} target="_blank" style={{ marginLeft: "10px" }}>
+          <BsGithub /> &nbsp;
+          {props.isBlog ? "Blog" : "Server"}
         </Button>
         {"\n"}
         {"\n"}

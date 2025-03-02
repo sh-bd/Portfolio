@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Shamimul Haque </span>
             from <span className="purple"> Rajshahi, Bangladesh.</span>
-            <br /> I am a second-year student pursuing a BSc in Information and Communication Engineering at Bangladesh Army University of Engineering and Technology.
+            <br /> I am a final-year student pursuing a BSc in Information and Communication Engineering at Bangladesh Army University of Engineering and Technology.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -30,7 +30,7 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Shamim</footer>
         </blockquote>
       </Card.Body>
     </Card>
